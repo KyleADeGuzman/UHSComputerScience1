@@ -139,7 +139,7 @@ while loop:
                     
                 else:
                     print "You guessed it!"
-                    print "The correct number was {0}.".format(mediumguess)
+                    print "The correct number was {0}.".format(mediumrandom)
                     break
             except ValueError:
                 print"Only integers"
