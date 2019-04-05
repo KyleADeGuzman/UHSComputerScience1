@@ -1,5 +1,8 @@
 import math
 
+# ------------------------------------------------------------------------------
+
+
 # 1
 # Write a program that asks the user how many numbers they have (positive 
 # integers only) and creates a list for them. Then, the program should scan the 
@@ -63,6 +66,8 @@ while n < (colornumbers):
    
 print colorlist[::-1]
 
+# ------------------------------------------------------------------------------
+
 # 4)  Write a program that asks the user to enter a list of numbers. The user 
 # should then calculate the average and print it to the screen.
 number = input('How many numbers are you looking to average: ')
@@ -72,6 +77,8 @@ for n in range(number):
     total_sum += numbers
 average = total_sum/number
 print("Average of {0} numbers is : {1}" .format(number,average))
+
+# ------------------------------------------------------------------------------
   
 # 5
 # Write a function that calculates the volume of a rectangular prism given 
@@ -83,6 +90,8 @@ def rectPVolume(length,width,height):
 
 print rectPVolume(5,2,10)
 
+# ------------------------------------------------------------------------------
+
 # 6
 # Write a function that finds the maximum of 3 numbers. 
 def maximum(n1,n2,n3):
@@ -91,6 +100,7 @@ def maximum(n1,n2,n3):
 
 print maximum(10,5,-3)
 
+# ------------------------------------------------------------------------------
 
 # 7
 # Write a function that prints out a star pattern depending on 
@@ -102,6 +112,8 @@ def star(rows):
     for i in range(rows):
         print (''*(rows-i-1)+'* '*(i+1))
 star(5)
+
+# ------------------------------------------------------------------------------
 
 # 8
 # Ask the user to enter a list. Then, print out all the numbers in that list 
@@ -120,6 +132,8 @@ for j in range(Number):
         lesser.append(NumList[j])
         
 print "The numbers in your list that are less than 10 are: {0}".format(lesser)
+
+# ------------------------------------------------------------------------------
 
 # 9
 #  Write a program that asks the user how many Fibonacci numbers to generate and
@@ -142,6 +156,8 @@ def fibonacci():
     return fibo
 print(fibonacci())
 input()
+
+# ------------------------------------------------------------------------------
 
 #10
 #  Write a function for checking the speed of drivers. This function should 
