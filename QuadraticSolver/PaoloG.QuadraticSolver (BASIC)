@@ -1,0 +1,32 @@
+
+from math import sqrt
+
+import cmath
+
+inputA= input("Type a value for A: ")
+
+inputB= input("Type  a value for B: ")
+
+inputC= input("Type  a value for C: ")
+
+discrimiant= inputB**2 -4*inputA*inputC
+if discrimiant > 1 : 
+    num_roots=2
+    solA= ((-inputB)+ sqrt (discrimiant))/(2*inputA)
+    solB= ((-inputB)- sqrt (discrimiant))/(2*inputA)
+    
+    print (" The function has  only two solution:" + str(solA) + str(solB))
+    
+elif  discrimiant == 0 : 
+    num_roots=1
+    x= ((-inputB)/(2*inputA))
+    print (" The function has only one solution: " + str(x))
+
+else :
+    num_roots=2
+    solA= ((-inputB)+ cmath.sqrt (discrimiant))/(2*inputA)
+    solB= ((-inputB)- cmath.sqrt (discrimiant))/(2*inputA)
+
+    print (" The function has two non-real solutions:  " + str(solA) + " " + str(solB))
+
+print (str(inputA)+"x^2 +" + str(inputB) + "x +" + str(inputC) + "=0")
