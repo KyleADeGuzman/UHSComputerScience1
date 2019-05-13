@@ -1,0 +1,179 @@
+#1) 1)
+# a) Write a program that asks the user for the temperature in Fahrenheit and converts it to Celsius. 
+#[C = (5/9) * (F - 32)] **for the fraction, type it in as 5.0/9.0**
+# Example: 
+# Input Temperature in F: 50
+# The temperature of 50 degrees F is 10 degrees C. 
+
+
+
+temp1= input(" Type down the Fahrenheit temperature to convert into Celcius: ")
+temp2= int((temp1-32)*1.8)
+print ("The temperature ") + str(temp1) + (" degrees Fahrenheit in Celcius " + (" is ") + str(temp2) + (" degrees")) 
+
+
+#1b celcius to fahrenheit
+tempc1= input(" Type down the Celcius temperature to convert into Fahrenheit: ")
+tempc2= int((tempc1*1.8)+32)
+print ("The temperature ") + str(tempc1) + (" degrees Celcius to Fahrenheit ") + ( "is ") + str(tempc2) + (" degrees")
+
+#2) Write a program that asks the user to enter a number and then outputs whether that number is even or odd.
+
+number= input(" Type down a number to determine if its odd or even ")
+if (number % 2) == 0:
+    print("{0} is even".format(number))
+else:
+    print("{0} is odd".format(number))
+
+#3) Write a Python program to check whether a letter of the alphabet is a vowel or consonant.
+#Example: 
+#Input a letter of the alphabet: k                                       
+#k is a consonant.
+
+alphadetermine= raw_input("Type a singular letter to determine if it is a consonant or a vowel: ")
+if alphadetermine == "a" or alphadetermine == "e" or alphadetermine == "i"or alphadetermine == "o" or alphadetermine == "u":
+    print(alphadetermine + " is a vowel letter")
+else:
+    print(alphadetermine + " is a consonant letter")
+
+#4) Write a Python program that asks the user to enter a month and outputs the number of days in that month.
+#Example:                            
+#Input the name of Month: February                                       
+#No. of days: 28 days
+
+guessmonth= raw_input("Type the month of your birthday (properly) to determine how many days are in the month: ")
+if guessmonth== "January":
+    print (" 31 days are in January")
+elif guessmonth== "February":
+    print (" 28 or 29 days are in February")
+elif guessmonth== "March":
+    print (" 31 days are in March")
+elif guessmonth== "April":
+    print (" 30 days are in April")
+elif guessmonth== "May":
+    print (" 31 days are in May")
+elif guessmonth== "June":
+    print (" 30 days are in June")
+elif guessmonth== "July":
+    print (" 31 days are in August")
+elif guessmonth== "August":
+    print (" 31 days are in August")
+elif guessmonth== "September":
+    print (" 30 days are in September")
+elif guessmonth== "October":
+    print (" 31 days are in October")
+elif guessmonth== "November":
+    print (" 31 days are in November")
+elif guessmonth== "September":
+    print (" 31 days are in September")
+
+#5)Write a Python program to display the astrological sign for a given date of birth. 
+#Example: 
+#Input birthday: 15                                                      
+#Input month of birth (e.g. march, july etc): may                        
+#Your Astrological sign is : Taurus
+# zday = int(input("Number value  birthday: "))
+# zmonth = raw_input("Birthmonth in letters: ")
+# if zmonth == 'January':
+#     zodicsign = 'Capricorn' if (zday < 20) else 'Aquarius'
+# elif zmonth == 'February':
+#     zodicsign = 'Aquarius' if (zday < 19) else 'Pisces'
+# elif zmonth == 'March':
+#     zodicsign =  'Pisces' if (zday < 21) else 'Aries'
+# elif zmonth == 'April':
+#     zodicsign = 'Aries' if (zday < 20) else 'Taurus'
+# elif zmonth == 'May':
+#     zodicsign = 'Taurus' if (zday < 21) else 'Gemini'
+# elif zmonth == 'June':
+#     zodicsign = 'Gemini' if (zday < 21) else 'Cancer'
+# elif zmonth == 'July':
+#     zodicsign = 'Cancer' if (zday < 23) else 'Leo'
+# elif zmonth == 'August':
+#     zodicsign = 'Leo' if (zday < 23) else 'Virgio'
+# elif zmonth == 'September':
+#     zodicsign = 'Virgio' if (zday < 23) else 'Libra'
+# elif zmonth == 'October':
+#     zodicsign = 'Libra' if (zday < 23) else 'Scorpio'
+# elif zmonth == 'November':
+#     zodicsign = 'Scorpio' if (zday < 22) else 'Sagittarius'
+# elif zmonth == ' December':
+#     zodicsign = 'Sagittarius' if (zday < 22) else 'Capricorn'
+# print("Your Astrological sign is: " + zodicsign)
+
+#6) Your Chinese Zodiac sign is derived from your birth year, according to the 
+#hinese lunar calendar. Write a program that  accepts a year and outputs the Chinese Zodiac 
+#Sign associated with it. See the years of each animal below: 
+
+#Rat: 2008, 1996, 1984, 1972, 1960
+#Ox: 2009, 1997, 1985, 1973, 1961
+#Tiger: 2010, 1998, 1986, 1974, 1962
+#Rabbit: 2011, 1999, 1987, 1975, 1963
+#Dragon: 2012, 2000, 1988, 1976, 1964
+#Snake: 2013, 2001, 1989, 1977, 1965
+#Horse: 2014, 2002, 1990, 1978, 1966
+#Goat: 2015, 2003, 1991, 1979, 1967
+#Monkey: 2016, 2004, 1992, 1980, 1968
+#Rooster: 2017, 2005, 1993, 1981, 1969
+#Dog: 2018, 2006, 1994, 1982, 1970
+#Pig: 2019, 2007, 1995, 1983, 1971
+
+chineseyear = int(input("Type the year you were born to know what Chinese Zodiac animal you're assoicated with: "))
+if (chineseyear - 2000) % 12 == 0:
+    print("Your birth year is the year of the Dragon")
+elif (chineseyear - 2000) % 12 == 1:
+    print("Your birth year is the year of the Snake")
+elif (chineseyear - 2000) % 12 == 2:
+    print("Your birth year is the year of the  Horse ")
+elif (chineseyear - 2000) % 12 == 3:
+    print("Your birth year is the year of the Sheep")
+elif (chineseyear - 2000) % 12 == 4:
+    print("Your birth year is the year of the Monkey")
+elif (chineseyear - 2000) % 12 == 5:
+    print("Your birth year is the year of the Rooster")
+elif (chineseyear - 2000) % 12 == 6:
+    print("Your birth year is the year of the  Dog")
+elif (chineseyear - 2000) % 12 == 7:
+    print("Your birth year is the year of the Pig")
+elif (chineseyear - 2000) % 12 == 8:
+    print(" Your birth year is the year of the Rat ")
+elif (chineseyear - 2000) % 12 == 9:
+    print(" Your birth year is the year of the Ox")
+elif (chineseyear - 2000) % 12 == 10:
+    print("Your birth year is the year of the Tiger")
+elif (chineseyear - 2000) % 12 == 11:
+    print(" Your birth year is the year of the Rabbit")
+    
+#7) Write a Python program that asks the user to input a year and outputs to the user whether it is a leap year or not. 
+
+year1= input("Type down the year to determine if it's a leap year or not: ")
+if year1 % 4 == 0:
+    print str(year1) + (" is Leap year")
+else:
+    print str(year1) + (" is NOT a leap year")
+
+#8) Write a Python program that asks the user to enter 2 numbers and outputs the average. 
+
+average1= input("Type the first number you wish to be averaged: ")
+average2= input("Type the second number you wish to be averaged: ")
+finalaverage= ((average1 + average2)/2)
+print (" The average of " + str(average1) + " and " + str(average2) + " is " + str(finalaverage))
+
+#9)
+y= int(input("Input y:"))
+m= int(input("Input m:"))
+b= int(input("Input b:"))
+
+x= m*y+b
+
+print("Your eqauion is " + str(y) + "=" + str(m)+  "x+" + str(b) + " and the solution is x = "+  str(m))
+
+#10)
+A= int(input("Input A:"))
+B= int(input("Input B:"))
+C= int(input("Input C:"))
+
+X= C/A
+Y= C/B
+
+print("Your eqauion is " + str(A) + "x" + str(B)+  "y=" + str(C) + " . The x-intercept is "+ str(X) +" and y-intercept is "+ str(Y)+".")
+
